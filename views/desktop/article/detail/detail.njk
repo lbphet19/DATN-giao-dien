@@ -1,0 +1,96 @@
+{% extends "../../layout.njk" %}
+{% block content %}
+    <main id="main" class="pt-8 max-w-[1170px] mx-auto">
+        <div class="text-black font-bold">
+            <div class="min-h-[40px] flex justify-between px-4 mx-auto">
+                <div class="flex-col flex-grow medium-text-center">
+                    <div class="is-small">
+                        <span>
+                            <span>
+                                <a href="https://bkcs.hust.edu.vn/" class="text-[rgba(102,102,102,.7)] font-normal">Home</a> » <a href="/{{article.category.slug}}" class="text-[rgba(102,102,102,.7)] font-normal">
+                                    <span>{{article.category.name}}</span></a> » </span class="breadcrumb_last" aria-current="page">{{article.name}}</span>
+                    </div>
+                </div>
+                <!-- .flex-left -->
+            </div>
+            <div class="border-[0.5px] border-[#7a9c59] w-[calc(100%-_2rem)] mx-auto"></div>
+            <!-- flex-row -->
+        </div>
+        <div id="content" class="pt-8 font-nunito">
+            <div class="row flex">
+                <div class="md:max-w-[75%] md:basis-3/4 px-4 -ml-4 pb-[30px]">
+                    <div class="article-inner">
+                        <header class="entry-header prose max-w-full">
+                            <div class="entry-header-text mt-4 entry-header-text-top pb-0 text-left">
+                                <h6 class="entry-category is-xsmall">
+                                    <a href="https://bkai.ai/events/" class="bg-[#435e29] no-underline text-white py-[3px] px-[10px] uppercase text-xs opacity-[0.8] font-medium">Events</a>
+                                </h6>
+
+                                <h1 class="entry-title text-[27px] mt-2">Cuộc thi Sáng kiến An toàn giao thông Việt Nam năm 2022</h1>
+                            </div>
+                        </header>
+                        <div class="entry-content single-page pt-0 prose max-w-full">
+
+                            <h4>Chính sách và loại học bổng</h4>
+                            <ul>
+                                <li>Năm 2017-2018, Trường Đại học Bách Khoa Hà Nội tổ chức xét cấp “Học bổng khuyến khích tài năng” và “Học bổng hỗ trợ học tập” cho sinh viên toàn Trường. Học bổng được chia làm hai mức: Học bổng toàn phần và học bổng bán phần có trị giá tương ứng 100% và 50% học phí đối với chương trình đào tạo hệ đại trà.</li>
+                                <li>Học bổng khuyến khích tài năng (Học bổng KKTN) là học bổng dành cho những sinh viên có thành tích xuất sắc trong học tập và có kết quả rèn luyện tốt. Học bổng KKTN cấp cho 3% (ba phần trăm) tổng số sinh viên đang học tập tại Trường.</li>
+                                <li>Học bổng hỗ trợ học tập (Học bổng &nbsp;HTHT) là học bổng dành cho những sinh viên có hoàn cảnh gia đình khó khăn, có kết quả học tập và rèn luyện tốt. Học bổng HTHT cấp cho 8% (tám phần trăm) tổng số sinh viên đang học tại Trường.</li>
+                                <li>Ngoài ra, sinh viên có thể đăng ký xét cấp học bổng tài trợ từ các doanh nghiệp, tổ chức, cá nhân tài trợ cho sinh viên của Trường.</li>
+                            </ul>
+                            <h4>Tiêu chuẩn đăng ký xét cấp Học bổng KKTN</h4>
+                            <p>Sinh viên phải đạt đồng thời các điều kiện sau:</p>
+                            <ul>
+                                <li>Đang trong thời gian học theo kế hoạch học tập chuẩn của chương trình đào tạo;</li>
+                                <li>Đạt trình độ năm học bằng với số năm học sinh viên đã theo học tại Trường;</li>
+                                <li>Điểm trung bình tích lũy (CPA đến hết học kỳ 20162) đạt từ loại giỏi trở lên và nằm trong số 3% sinh viên có kết quả cao nhất theo khóa và ngành;</li>
+                                <li>Điểm rèn luyện trung bình tích lũy đạt từ loại tốt trở lên.</li>
+                            </ul>
+                            <blockquote>
+                                <p>Sinh viên <strong>Lê Văn Đồng</strong>, ngành An toàn thông tin, Viện CNTT&amp;TT, hiện đang nghiên cứu toàn thời gian tại Trung tâm An toàn, an ninh thông tin, Đại học Bách Khoa Hà Nội đã xuất sắc vượt qua nhiều tiêu chí xét duyệt để trở thành một trong số các sinh viên được trao học bổng này.</p>
+                            </blockquote>
+
+                            <div class="blog-share text-center">
+                                <div class="social-icons share-icons share-row relative">
+                                    <a href="https://www.facebook.com/sharer.php?u=https://bkcs.hust.edu.vn/hb-kktn-le-van-dong-2017-2018/" data-label="Facebook" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon button circle is-outline tooltip facebook tooltipstered" aria-label="Share on Facebook">
+                                        <i class="icon-facebook"></i>
+                                    </a>
+                                </div>
+                            </div>
+                                 {# <li>Năm 2017-2018, Trường Đại học Bách Khoa Hà Nội tổ chức xét cấp “Học bổng khuyến khích tài năng” và “Học bổng hỗ trợ học tập” cho sinh viên toàn Trường. Học bổng được chia làm hai mức: Học bổng toàn phần và học bổng bán phần có trị giá tương ứng 100% và 50% học phí đối với chương trình đào tạo hệ đại trà.</li>
+                                <li>Học bổng khuyến khích tài năng (Học bổng KKTN) là học bổng dành cho những sinh viên có thành tích xuất sắc trong học tập và có kết quả rèn luyện tốt. Học bổng KKTN cấp cho 3% (ba phần trăm) tổng số sinh viên đang học tập tại Trường.</li>
+                                <li>Học bổng hỗ trợ học tập (Học bổng &nbsp;HTHT) là học bổng dành cho những sinh viên có hoàn cảnh gia đình khó khăn, có kết quả học tập và rèn luyện tốt. Học bổng HTHT cấp cho 8% (tám phần trăm) tổng số sinh viên đang học tại Trường.</li>
+                                <li>Ngoài ra, sinh viên có thể đăng ký xét cấp học bổng tài trợ từ các doanh nghiệp, tổ chức, cá nhân tài trợ cho sinh viên của Trường.</li>
+                            </ul>
+                            <h4>Tiêu chuẩn đăng ký xét cấp Học bổng KKTN</h4>
+                            <p>Sinh viên phải đạt đồng thời các điều kiện sau:</p>
+                            <ul>
+                                <li>Đang trong thời gian học theo kế hoạch học tập chuẩn của chương trình đào tạo;</li>
+                                <li>Đạt trình độ năm học bằng với số năm học sinh viên đã theo học tại Trường;</li>
+                                <li>Điểm trung bình tích lũy (CPA đến hết học kỳ 20162) đạt từ loại giỏi trở lên và nằm trong số 3% sinh viên có kết quả cao nhất theo khóa và ngành;</li>
+                                <li>Điểm rèn luyện trung bình tích lũy đạt từ loại tốt trở lên.</li>
+                            </ul>
+                                 <li>Năm 2017-2018, Trường Đại học Bách Khoa Hà Nội tổ chức xét cấp “Học bổng khuyến khích tài năng” và “Học bổng hỗ trợ học tập” cho sinh viên toàn Trường. Học bổng được chia làm hai mức: Học bổng toàn phần và học bổng bán phần có trị giá tương ứng 100% và 50% học phí đối với chương trình đào tạo hệ đại trà.</li>
+                                <li>Học bổng khuyến khích tài năng (Học bổng KKTN) là học bổng dành cho những sinh viên có thành tích xuất sắc trong học tập và có kết quả rèn luyện tốt. Học bổng KKTN cấp cho 3% (ba phần trăm) tổng số sinh viên đang học tập tại Trường.</li>
+                                <li>Học bổng hỗ trợ học tập (Học bổng &nbsp;HTHT) là học bổng dành cho những sinh viên có hoàn cảnh gia đình khó khăn, có kết quả học tập và rèn luyện tốt. Học bổng HTHT cấp cho 8% (tám phần trăm) tổng số sinh viên đang học tại Trường.</li>
+                                <li>Ngoài ra, sinh viên có thể đăng ký xét cấp học bổng tài trợ từ các doanh nghiệp, tổ chức, cá nhân tài trợ cho sinh viên của Trường.</li>
+                            </ul>
+                            <h4>Tiêu chuẩn đăng ký xét cấp Học bổng KKTN</h4>
+                            <p>Sinh viên phải đạt đồng thời các điều kiện sau:</p>
+                            <ul>
+                                <li>Đang trong thời gian học theo kế hoạch học tập chuẩn của chương trình đào tạo;</li>
+                                <li>Đạt trình độ năm học bằng với số năm học sinh viên đã theo học tại Trường;</li>
+                                <li>Điểm trung bình tích lũy (CPA đến hết học kỳ 20162) đạt từ loại giỏi trở lên và nằm trong số 3% sinh viên có kết quả cao nhất theo khóa và ngành;</li>
+                                <li>Điểm rèn luyện trung bình tích lũy đạt từ loại tốt trở lên.</li>
+                            </ul> #}
+                        </div>
+
+                    </div>
+                </div>
+                <div class="md:max-w-[25%] md:basis-1/4 pl-8 pb-[30px]">
+                    {% include "../sidebar.njk" %}
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

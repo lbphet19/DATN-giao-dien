@@ -19,7 +19,7 @@ myAxiosInstance.interceptors.request.use(x => {
     for(let key in x.params){
         params += `${key}=${x.params[key]}&`
     }
-    const printable = `${new Date()} | Request: ${x.method.toUpperCase()} | ${x.url}${params}`
+    const printable = `${new Date()} | Request: ${x.method.toUpperCase()} | api/v2/${x.url}${params}`
     console.log(printable)
 
     return x;

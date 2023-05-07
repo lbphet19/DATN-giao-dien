@@ -14,8 +14,9 @@
     </style>
   </head>
   <body>
+    <div class="h-[100px]">
     <header id="header" class="header has-sticky sticky-jump" style="">
-      <div id="header-wrapper" class="bg-white">
+      <div id="header-wrapper" class="bg-white animate-[customEase_0.6s_ease] duration-[0.3s] transition-[ease]">
         <div id="masthead" class="header-main h-full">
           <div class="max-w-[1170px] flex space-between mx-auto h-full px-4" role="navigation">
 
@@ -112,6 +113,7 @@
         </div>
       </div>
     </header>
+    </div>
     {% block content %}{% endblock %}
   </body>
   <script>
@@ -122,7 +124,6 @@
     }
 
     function detectScroll(){
-      console.log(window.pageYOffset + '--' + headerOffsetTop)
       //if(window.pageYOffset > headerOffsetTop + 200){ 
       if(window.pageYOffset > headerOffsetTop + 100){
         header.classList.add('sticky')

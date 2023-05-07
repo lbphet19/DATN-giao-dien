@@ -25,9 +25,12 @@ class ArticleController{
     }
     async detailArticle(req,res,next){
         let article = await HTTP.get('article',{slug:req.params.slug})
+        // console.log(article.data)
         if(article.status === 200){
+            // console.log(article.data.content.blocks[0].data.cols[0].blocks[0])
             res.render(req.layout + '/article/detail/detail.njk',
             { 
+                test: article.data.content.blocks[0].data.cols[0].blocks[0],
                 article: article.data
             }
         )

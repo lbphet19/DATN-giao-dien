@@ -44,7 +44,6 @@ const process_content_article = (block) => {
 	let html = ''
 	switch (block.type) {
     case 'columns':
-
       // console.log(block.data.cols[0])
       let col_1_content = ''
       let col_2_content = ''
@@ -54,8 +53,8 @@ const process_content_article = (block) => {
       for(let item of block.data.cols[1].blocks){
         col_2_content += process_content_article(item)
       }
-      let col_1 = `<div class="w-1/2">${col_1_content}</div>`
-      let col_2 = `<div class="w-1/2">${col_2_content}</div>`
+      let col_1 = `<div class="w-[${block.data.width[0]}%]">${col_1_content}</div>`
+      let col_2 = `<div class="w-[${block.data.width[1]}%]">${col_2_content}</div>`
       /* for (let block of block.data.cols[0].blocks){
         console.log(block)
       } */
@@ -81,7 +80,6 @@ const process_content_article = (block) => {
 		`
 			break
 		case 'image':
-      console.log(process.env.SERVER_DOMAIN)
 			html = `<figure class="mb-4">
 			<img src="${process.env.SERVER_DOMAIN}${block.data.url}" class="w-full h-auto mb-2" />
 			<figcaption class="mx-auto w-[80%] text-center"><span class="inline-block text-sm italic font-normal">${block.data.caption ? block.data.caption : '' }</span></figcaption>

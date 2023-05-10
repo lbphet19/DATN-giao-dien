@@ -3,7 +3,7 @@ const myAxiosInstance = require('./axios.js')
 
 class HTTP{
     instance = axios.create({
-        baseURL: 'http://localhost:8000/api/v2'
+        baseURL: `${process.env.SERVER_DOMAIN}/api/v2`
         // baseURL: 'https://jsonplaceholder.typicode.com/'
     })
     

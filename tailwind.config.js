@@ -5,6 +5,8 @@ module.exports = {
     './views/desktop/*.njk',
     './views/mobile/*.njk',
     './views/mobile/**/*.njk',
+    './utils/*.js,',
+    './utils/**/*.js,'
   ],
   theme: {
     // fontFamily

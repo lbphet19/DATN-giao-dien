@@ -1,6 +1,6 @@
 const axios = require('axios').default
 const myAxiosInstance = axios.create({
-    baseURL: 'http://localhost:8000/api/v2',
+    baseURL: `${process.env.SERVER_DOMAIN}/api/v2`,
     // timeout: 30000,
 })
 
